@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.andreikingsley"
-version = "test-datalore-1.0"
+version = "test-datalore-1.1"
 
 repositories {
     mavenCentral()
@@ -20,7 +20,7 @@ dependencies {
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "17"
+        kotlinOptions.jvmTarget = "1.8"
     }
 }
 
@@ -29,7 +29,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.andreikingsley"
             artifactId = "test"
-            version = "test-datalore-1.0"
+            version = "test-datalore-1.1"
 
             from(components["java"])
         }
